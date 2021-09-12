@@ -1,0 +1,138 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a15tcpg236-1",
+      "gen_directory": "../../../../iptest3.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1"
+    },
+    "design_tree": {
+      "dsp_macro_0": ""
+    },
+    "ports": {
+      "sysclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "12000000"
+          }
+        }
+      }
+    },
+    "components": {
+      "dsp_macro_0": {
+        "vlnv": "xilinx.com:ip:dsp_macro:1.0",
+        "xci_name": "design_1_dsp_macro_0_0",
+        "xci_path": "ip/design_1_dsp_macro_0_0/design_1_dsp_macro_0_0.xci",
+        "inst_hier_path": "dsp_macro_0",
+        "parameters": {
+          "a_width": {
+            "value": "2"
+          },
+          "areg_3": {
+            "value": "true"
+          },
+          "areg_4": {
+            "value": "true"
+          },
+          "b_width": {
+            "value": "2"
+          },
+          "breg_3": {
+            "value": "true"
+          },
+          "breg_4": {
+            "value": "true"
+          },
+          "c_width": {
+            "value": "2"
+          },
+          "creg_3": {
+            "value": "true"
+          },
+          "creg_4": {
+            "value": "true"
+          },
+          "creg_5": {
+            "value": "true"
+          },
+          "d_width": {
+            "value": "2"
+          },
+          "dreg_3": {
+            "value": "true"
+          },
+          "has_d_ce": {
+            "value": "false"
+          },
+          "instruction1": {
+            "value": "A*B+C"
+          },
+          "instruction2": {
+            "value": "(A+D)*B"
+          },
+          "instruction3": {
+            "value": "#"
+          },
+          "instruction4": {
+            "value": "#"
+          },
+          "instruction5": {
+            "value": "#"
+          },
+          "instruction6": {
+            "value": "#"
+          },
+          "instruction7": {
+            "value": "#"
+          },
+          "instruction8": {
+            "value": "#"
+          },
+          "mreg_5": {
+            "value": "true"
+          },
+          "opreg_3": {
+            "value": "true"
+          },
+          "opreg_4": {
+            "value": "true"
+          },
+          "opreg_5": {
+            "value": "true"
+          },
+          "output_properties": {
+            "value": "Full_Precision"
+          },
+          "p_binarywidth": {
+            "value": "0"
+          },
+          "p_full_width": {
+            "value": "6"
+          },
+          "p_width": {
+            "value": "6"
+          },
+          "preg_6": {
+            "value": "true"
+          },
+          "show_filtered": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sysclk_1": {
+        "ports": [
+          "sysclk",
+          "dsp_macro_0/CLK"
+        ]
+      }
+    }
+  }
+}
